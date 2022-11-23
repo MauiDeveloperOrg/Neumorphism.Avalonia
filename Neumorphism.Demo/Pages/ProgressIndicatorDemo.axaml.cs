@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System.ComponentModel;
 using System.Timers;
+using Timer = System.Timers.Timer;
 
 namespace Neumorphism.Avalonia.Demo.Pages
 {
@@ -103,7 +104,7 @@ namespace Neumorphism.Avalonia.Demo.Pages
                 _caseProgress1 = 0;
             }
 
-            context.Progress1 = _caseProgress1;
+            //context.Progress1 = _caseProgress1;
         }
 
         private void Timer2_Elapsed(object sender, ElapsedEventArgs e)
@@ -117,7 +118,7 @@ namespace Neumorphism.Avalonia.Demo.Pages
                 _caseProgress2 = 0;
             }
 
-            context.Progress2 = _caseProgress2;
+            //context.Progress2 = _caseProgress2;
         }
 
         private void Timer3_Elapsed(object sender, ElapsedEventArgs e)
@@ -131,7 +132,7 @@ namespace Neumorphism.Avalonia.Demo.Pages
                 _caseProgress3 = 60;
             }
 
-            context.Progress3 = _caseProgress3;
+            //context.Progress3 = _caseProgress3;
         }
 
 

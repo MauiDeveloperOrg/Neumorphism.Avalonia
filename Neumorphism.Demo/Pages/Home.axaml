@@ -67,7 +67,7 @@
         <Button Name="btn2" Width="200" Content="OPEN CONTROLS" Command="{Binding Path=OpenLeftDrawer}"/>
         <Button Name="btn4" Command="{Binding Path=OpenAvaloniaWebsiteLink}">
           <Viewbox Width="40" Height="40">
-            <DrawingPresenter Drawing="{DynamicResource AvaloniaLogo}" />
+			  <Image Source="{DynamicResource AvaloniaLogo}" />
           </Viewbox>
         </Button>
       </WrapPanel>

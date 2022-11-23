@@ -22,7 +22,7 @@ namespace Neumorphism.Avalonia.Styles.Dialog.Bases
 
         // TODO: Support custom control
         /// <summary>
-        /// Specify <see cref="Avalonia.Media.Imaging.Bitmap"/>, <see cref="Avalonia.Controls.Control"/> or <see cref="DialogIconKind"/> for dialog header icon.
+        /// Specify <see cref="Avalonia"/>, <see cref="Avalonia"/> or <see cref="DialogIconKind"/> for dialog header icon.
         /// </summary>
         public object DialogIcon = null;
         

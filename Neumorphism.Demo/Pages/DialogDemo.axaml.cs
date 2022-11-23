@@ -3,6 +3,7 @@ using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using DialogHostAvalonia;
 using Neumorphism.Avalonia.Demo.Models;
 using Neumorphism.Avalonia.Demo.ViewModels;
 
@@ -22,15 +23,15 @@ namespace Neumorphism.Avalonia.Demo.Pages
             AvaloniaXamlLoader.Load(this);
         }
 
-        private void OpenDialogWithView(object sender, RoutedEventArgs e)
+        private async void OpenDialogWithView(object sender, RoutedEventArgs e)
         {
-            DialogHost.DialogHost.Show(this.Resources["Sample2View"]!, "MainDialogHost");
+            await DialogHost.Show(this.Resources["Sample2View"]!, "MainDialogHost");
         }
 
-        private void OpenDialogWithModel(object sender, RoutedEventArgs e)
+        private async void OpenDialogWithModel(object sender, RoutedEventArgs e)
         {
             // View that associated with this model defined at DialogContentTemplate in DialogDemo.axaml
-            DialogHost.DialogHost.Show(new Sample2Model(new Random().Next(0, 100)), "MainDialogHost");
+            await DialogHost.Show(new Sample2Model(new Random().Next(0, 100)), "MainDialogHost");
         }
 
         private void OpenMoreDialogHostExamples(object sender, RoutedEventArgs e)

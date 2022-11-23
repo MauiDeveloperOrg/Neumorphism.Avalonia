@@ -1,5 +1,6 @@
 ﻿using Neumorphism.Avalonia.Styles;
 using System.Timers;
+using Timer = System.Timers.Timer;
 
 namespace Neumorphism.Avalonia.Demo.ViewModels.Panels
 {

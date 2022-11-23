@@ -48,7 +48,7 @@
                             HorizontalAlignment="Left"
                             IsVisible="False" IsHitTestVisible="False"
                             Width="0" Height="0">
-						<Grid Name="MovingKnobs"
+						<Grid Name="PART_MovingKnobs"
                               IsVisible="False" IsHitTestVisible="False"
                               Width="0" Height="0" />
 					</Canvas>
@@ -152,7 +152,7 @@
                             HorizontalAlignment="Left"
                             IsVisible="False" IsHitTestVisible="False"
                             Width="0" Height="0">
-						<Grid Name="MovingKnobs"
+						<Grid Name="PART_MovingKnobs"
                               IsVisible="False" IsHitTestVisible="False"
                               Width="0" Height="0" />
 					</Canvas>

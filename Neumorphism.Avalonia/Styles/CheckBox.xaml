@@ -56,7 +56,7 @@
                     <Viewbox
                       Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(assists:SelectionControlAssist.InnerSize)}"
                       Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(assists:SelectionControlAssist.InnerSize)}"
-                      VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0" Margin="0"
+                      VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0"
                       ClipToBounds="False">
                       <!--Check symbol-->
                       <Path Name="Graphic" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>

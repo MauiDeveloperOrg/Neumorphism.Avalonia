@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ShowMeTheXaml.Avalonia.AvaloniaEit</Title>
+        <Authors>SKProCH</Authors>
+        <Description>AvaloniaEdit (AvalonEdit) style for the ShowMeTheXAML.Avalonia XamlDisplay control.</Description>
+        <PackageProjectUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia.git</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>avalonia avaloniaui</PackageTags>
+    </PropertyGroup>
+ 
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia.Xaml.Behaviors" />
+      <PackageReference Include="Avalonia.AvaloniaEdit" />
+    </ItemGroup>
+ 
+
+    <ItemGroup>
+      <ProjectReference Include="..\ShowMeTheXaml.Avalonia\ShowMeTheXaml.Avalonia.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="XamlDisplayStyles.cs">
+        <DependentUpon>XamlDisplayStyles.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

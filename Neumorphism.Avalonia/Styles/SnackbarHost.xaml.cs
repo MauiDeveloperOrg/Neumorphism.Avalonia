@@ -10,6 +10,7 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Layout;
 using Avalonia.Threading;
 using Neumorphism.Avalonia.Styles.Models;
+using Timer = System.Timers.Timer;
 
 namespace Neumorphism.Avalonia.Styles
 {
@@ -113,7 +114,7 @@ namespace Neumorphism.Avalonia.Styles
         /// <param name="targetHost">the snackbar host that you wanted to use.</param>
         /// <param name="priority">the priority of current task.</param>
         public static void Post(string text, string? targetHost = null,
-            DispatcherPriority priority = DispatcherPriority.Normal) =>
+            DispatcherPriority priority = default) =>
             Post(new SnackbarModel(text), targetHost, priority);
 
         /// <summary>
@@ -123,7 +124,7 @@ namespace Neumorphism.Avalonia.Styles
         /// <param name="targetHost">the snackbar host that you wanted to use.</param>
         /// <param name="priority">the priority of current task.</param>
         public static void Post(SnackbarModel model, string? targetHost = null,
-            DispatcherPriority priority = DispatcherPriority.Normal)
+            DispatcherPriority priority = default)
         {
             if (string.IsNullOrEmpty(targetHost))
                 targetHost = GetFirstHostName();
@@ -164,7 +165,7 @@ namespace Neumorphism.Avalonia.Styles
         /// <param name="model">snackbar data model.</param>
         /// <param name="targetHost">the snackbar host that you wanted to use.</param>
         /// <param name="priority">the priority of current task.</param>
-        public static void Remove(SnackbarModel model, string targetHost = null, DispatcherPriority priority = DispatcherPriority.Normal)
+        public static void Remove(SnackbarModel model, string targetHost = null, DispatcherPriority priority = default)
         {
             if (string.IsNullOrEmpty(targetHost))
                 targetHost = GetFirstHostName();

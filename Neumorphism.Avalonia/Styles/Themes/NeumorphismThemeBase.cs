@@ -10,7 +10,6 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Markup.Xaml.Styling;
 using Avalonia.Media;
 using Avalonia.Styling;
-using Avalonia.Themes.Fluent;
 using Avalonia.Threading;
 using Neumorphism.Avalonia.Styles.Colors.ColorManipulation;
 using Avalonia;
@@ -24,7 +23,7 @@ namespace Neumorphism.Avalonia.Styles.Themes
         private IStyle? _loaded;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FluentTheme"/> class.
+        /// Initializes a new instance of the   class.
         /// </summary>
         /// <param name="baseUri">The base URL for the XAML context.</param>
         public NeumorphismThemeBase(Uri baseUri) {
@@ -34,7 +33,7 @@ namespace Neumorphism.Avalonia.Styles.Themes
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FluentTheme"/> class.
+        /// Initializes a new instance of the   class.
         /// </summary>
         /// <param name="serviceProvider">The XAML service provider.</param>
         public NeumorphismThemeBase(IServiceProvider serviceProvider)
@@ -106,7 +105,7 @@ namespace Neumorphism.Avalonia.Styles.Themes
             }
         }
 
-        public SelectorMatchResult TryAttach(IStyleable target, IStyleHost? host) => Loaded.TryAttach(target, host);
+        public SelectorMatchResult TryAttach(IStyleable target, object? host) => Loaded.TryAttach(target, host);
         public bool TryGetResource(object key, out object? value)
         {
             if (!_isLoading && Loaded is IResourceProvider p)
@@ -259,5 +258,7 @@ namespace Neumorphism.Avalonia.Styles.Themes
 
                 });
         }
+
+      
     }
 }

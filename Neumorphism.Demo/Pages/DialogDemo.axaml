@@ -3,7 +3,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:styles="clr-namespace:Neumorphism.Avalonia.Styles;assembly=Neumorphism.Avalonia"
              xmlns:viewModels="clr-namespace:Neumorphism.Avalonia.Demo.ViewModels"
-             xmlns:dialogHost="clr-namespace:DialogHost;assembly=DialogHost.Avalonia"
+             xmlns:dialogHost="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
              xmlns:models="clr-namespace:Neumorphism.Avalonia.Demo.Models"
              x:Class="Neumorphism.Avalonia.Demo.Pages.DialogDemo"
              x:DataType="viewModels:DialogDemoViewModel">

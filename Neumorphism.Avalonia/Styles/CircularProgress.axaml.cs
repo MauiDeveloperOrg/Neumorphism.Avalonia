@@ -149,19 +149,19 @@ namespace Neumorphism.Avalonia.Styles
 			_arcSegmentSize = new Size();
 		}
 
-		protected override void OnPropertyChanged<T>(AvaloniaPropertyChangedEventArgs<T> e)
-		{
-			base.OnPropertyChanged(e);
+        protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
 
-			if (e.Property == StrokeBrushProperty ||
-				e.Property == StrokeThicknessProperty ||
-				e.Property == ProgressValueProperty)
-			{
-				RenderArc();
-			}
-		}
+            if (e.Property == StrokeBrushProperty ||
+                e.Property == StrokeThicknessProperty ||
+                e.Property == ProgressValueProperty)
+            {
+                RenderArc();
+            }
+        }
 
-		protected override Size MeasureOverride(Size availableSize)
+        protected override Size MeasureOverride(Size availableSize)
 		{
 			_radius = availableSize.Height / 2;
 			_radius -= StrokeThickness;

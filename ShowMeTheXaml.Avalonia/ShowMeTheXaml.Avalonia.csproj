@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>ShowMeTheXaml.Avalonia</Title>
+		<Authors>SKProCH</Authors>
+		<Description>Package contains Avalonia control that can display xaml code from ShowMeTheXaml.Avalonia.Generator</Description>
+		<PackageProjectUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia/blob/master/LICENSE</PackageLicenseUrl>
+		<RepositoryUrl>https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia.git</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
+		<PackageTags>avalonia avaloniaui</PackageTags>
+		<RootNamespace>ShowMeTheXaml</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Update="**\*.xaml.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<AvaloniaResource Include="**\*.xaml">
+			<SubType>Designer</SubType>
+		</AvaloniaResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia"/>
+		<PackageReference Include="Avalonia.Markup.Xaml.Loader"/>
+		<PackageReference Include="Avalonia.Xaml.Behaviors"/>
+	</ItemGroup>
+
+</Project>

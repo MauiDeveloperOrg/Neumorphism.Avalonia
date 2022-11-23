@@ -40,7 +40,7 @@ namespace Neumorphism.Avalonia.Styles.Converters
                     //}
                     
                     
-                    string[] parts = param.Split("|");
+                    string[] parts = param.Split('|');
                     if (parts.Length == 4)
                     {
                         for (int i = 0; i < parts.Length; i++)

@@ -65,7 +65,6 @@ namespace Neumorphism.Avalonia.Demo
                 mainScroller.Offset = Vector.Zero;
                 mainScroller.VerticalScrollBarVisibility =
                     listBox.SelectedIndex == 5 ? ScrollBarVisibility.Disabled : ScrollBarVisibility.Auto;
-                
             }
             catch
             {

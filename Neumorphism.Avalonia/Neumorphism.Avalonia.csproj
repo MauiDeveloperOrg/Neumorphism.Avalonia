@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <VersionPrefix>0.4.0</VersionPrefix>
         <Title>Neumorphism.Avalonia</Title>
         <Authors>Eviral</Authors>
@@ -10,8 +10,7 @@
         <PackageLicenseUrl></PackageLicenseUrl>
         <RepositoryUrl>https://github.com/flarive/Neumorphism.Avalonia</RepositoryUrl>
 		<PackageIcon>Icon.png</PackageIcon>
-        <RepositoryType>git</RepositoryType>
-        <LangVersion>9</LangVersion>
+        <RepositoryType>git</RepositoryType> 
         <PackageReleaseNotes>
 			Easy to use and customizable Neumorphism Design implementation for AvaloniaUI framework.
 			Demo app can be found here : https://github.com/flarive/Neumorphism.Avalonia
@@ -61,12 +60,13 @@
       <AvaloniaResource Include="Styles\CircularProgress.axaml" />
     </ItemGroup>
 
-
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="0.10.17" />
-      <PackageReference Include="DialogHost.Avalonia" Version="0.5.0" />
+      <PackageReference Include="Avalonia" /> 
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DialogHost.Avalonia\DialogHost.Avalonia.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <Compile Update="Styles\CircularProgress.axaml.cs">

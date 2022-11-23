@@ -5,7 +5,7 @@
 			 x:Class="Neumorphism.Avalonia.Demo.App">
   
   <Application.Styles>
-    <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml" />
+    <!--<StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml" />-->
     <themes:NeumorphismTheme BaseTheme="Light" PrimaryColor="Purple" SecondaryColor="Lime" />
     <StyleInclude Source="avares://Material.Icons.Avalonia/App.xaml" />
     <!--<StyleInclude Source="avares://Neumorphism.DataGrid/DataGrid.xaml" />-->

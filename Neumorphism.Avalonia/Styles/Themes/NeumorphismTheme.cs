@@ -1,6 +1,4 @@
-using System;
 using Avalonia;
-using Avalonia.Themes.Fluent;
 using Neumorphism.Avalonia.Styles.Colors;
 using Neumorphism.Avalonia.Styles.Themes.Base;
 
@@ -15,13 +13,13 @@ namespace Neumorphism.Avalonia.Styles.Themes
     public class NeumorphismTheme : NeumorphismThemeBase
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="FluentTheme"/> class.
+        /// Initializes a new instance of the  class.
         /// </summary>
         /// <param name="baseUri">The base URL for the XAML context.</param>
         public NeumorphismTheme(Uri baseUri) : base(baseUri) { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FluentTheme"/> class.
+        /// Initializes a new instance of the  class.
         /// </summary>
         /// <param name="serviceProvider">The XAML service provider.</param>
         public NeumorphismTheme(IServiceProvider serviceProvider) : base(serviceProvider) { }
@@ -29,7 +27,8 @@ namespace Neumorphism.Avalonia.Styles.Themes
         public static readonly StyledProperty<BaseThemeMode> BaseThemeProperty
             = AvaloniaProperty.Register<NeumorphismTheme, BaseThemeMode>(nameof(BaseTheme));
 
-        public BaseThemeMode BaseTheme {
+        public BaseThemeMode BaseTheme
+        {
             get => GetValue(BaseThemeProperty);
             set => SetValue(BaseThemeProperty, value);
         }
@@ -37,7 +36,8 @@ namespace Neumorphism.Avalonia.Styles.Themes
         public static readonly StyledProperty<PrimaryColor> PrimaryColorProperty
             = AvaloniaProperty.Register<NeumorphismTheme, PrimaryColor>(nameof(PrimaryColor));
 
-        public PrimaryColor PrimaryColor {
+        public PrimaryColor PrimaryColor
+        {
             get => GetValue(PrimaryColorProperty);
             set => SetValue(PrimaryColorProperty, value);
         }
@@ -45,7 +45,8 @@ namespace Neumorphism.Avalonia.Styles.Themes
         public static readonly StyledProperty<SecondaryColor> SecondaryColorProperty
             = AvaloniaProperty.Register<NeumorphismTheme, SecondaryColor>(nameof(SecondaryColor));
 
-        public SecondaryColor SecondaryColor {
+        public SecondaryColor SecondaryColor
+        {
             get => GetValue(SecondaryColorProperty);
             set => SetValue(SecondaryColorProperty, value);
         }
@@ -54,26 +55,32 @@ namespace Neumorphism.Avalonia.Styles.Themes
         private bool _isPrimaryColorPropertyApplied;
         private bool _isSecondaryColorPropertyApplied;
         private ITheme _theme = new ThemeStruct();
-        protected override void OnPropertyChanged<T>(AvaloniaPropertyChangedEventArgs<T> change) {
+        protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
+        {
             base.OnPropertyChanged(change);
-            if (change.Property == BaseThemeProperty) {
+            if (change.Property == BaseThemeProperty)
+            {
                 _theme = _theme.SetBaseTheme(BaseTheme.GetBaseTheme());
                 _isBaseThemePropertyApplied = true;
                 TryApplyTheme();
             }
-            if (change.Property == PrimaryColorProperty) {
+            if (change.Property == PrimaryColorProperty)
+            {
                 _theme = _theme.SetPrimaryColor(SwatchHelper.Lookup[(MaterialColor)PrimaryColor]);
                 _isPrimaryColorPropertyApplied = true;
                 TryApplyTheme();
             }
-            if (change.Property == SecondaryColorProperty) {
+            if (change.Property == SecondaryColorProperty)
+            {
                 _theme = _theme.SetSecondaryColor(SwatchHelper.Lookup[(MaterialColor)SecondaryColor]);
                 _isSecondaryColorPropertyApplied = true;
                 TryApplyTheme();
             }
 
-            void TryApplyTheme() {
-                if (_isBaseThemePropertyApplied && _isPrimaryColorPropertyApplied && _isSecondaryColorPropertyApplied) {
+            void TryApplyTheme()
+            {
+                if (_isBaseThemePropertyApplied && _isPrimaryColorPropertyApplied && _isSecondaryColorPropertyApplied)
+                {
                     this.CurrentTheme = _theme;
                 }
             }
