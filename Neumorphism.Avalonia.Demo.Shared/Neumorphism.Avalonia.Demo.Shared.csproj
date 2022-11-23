@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia" />
+		<PackageReference Include="Avalonia.Controls.DataGrid" />
+		<PackageReference Include="Avalonia.ReactiveUI" />
+		<PackageReference Include="XamlNameReferenceGenerator" /> 
+		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" />
+
+	</ItemGroup>
+	<ItemGroup> 
+		<ProjectReference Include="..\DialogHost.Avalonia\DialogHost.Avalonia.csproj" /> 
+		<ProjectReference Include="..\Material.Icons.Avalonia\Material.Icons.Avalonia.csproj" />
+		<ProjectReference Include="..\Neumorphism.Avalonia\Neumorphism.Avalonia.csproj" />
+		<ProjectReference Include="..\ShowMeTheXaml.Avalonia\ShowMeTheXaml.Avalonia.csproj" />
+		<ProjectReference Include="..\ShowMeTheXaml.Avalonia.AvaloniaEdit\ShowMeTheXaml.Avalonia.AvaloniaEdit.csproj" /> 
+		<ProjectReference Include="..\ShowMeTheXaml.Avalonia.Generator\ShowMeTheXaml.Avalonia.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="true" /> 
+	</ItemGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\**" /> 
+	</ItemGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="**\*.xaml" />
+		<AdditionalFiles Include="**\*.axaml" />
+	</ItemGroup>
+
+</Project>

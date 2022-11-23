@@ -1,0 +1,14 @@
+﻿<Window x:Class="Neumorphism.Avalonia.Demo.Shared.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="using:Neumorphism.Avalonia.Demo.Shared"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Width="1280" Height="720" MinWidth="720"
+        Icon="resm:Neumorphism.Avalonia.Demo.Resources.Icons.app.ico"
+        Title="Avalonia.Neumorphism.Demo">
+
+	<local:MainView/>
+ 
+</Window>
