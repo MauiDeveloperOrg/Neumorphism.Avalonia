@@ -3,7 +3,7 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks> 
 		<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-		<ApplicationIcon>Resources\Icons\app.ico</ApplicationIcon>
+		<ApplicationIcon>app.ico</ApplicationIcon>
 	</PropertyGroup>
 	<PropertyGroup>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
