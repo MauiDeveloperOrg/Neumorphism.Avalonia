@@ -30,4 +30,15 @@
 		<AdditionalFiles Include="**\*.axaml" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <AdditionalFiles Remove="Pages\TreeViewsDemo.axaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AvaloniaXaml Update="Pages\TreeViewsDemo.axaml">
+	    <SubType>Designer</SubType>
+	  </AvaloniaXaml>
+	</ItemGroup>
+
+	
 </Project>
