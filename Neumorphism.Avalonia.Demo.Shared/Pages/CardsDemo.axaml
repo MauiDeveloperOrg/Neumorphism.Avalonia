@@ -36,7 +36,7 @@
       <showMeTheXaml:XamlDisplay UniqueId="Cards1">
         <styles:Card Width="250" Height="310" CornerRadius="20" VerticalAlignment="Top" Padding="0" ToolTip.Tip="Ouset card with custom corner radius">
           <StackPanel Margin="0" Background="{DynamicResource PrimaryHueLightBrush}">
-            <Image Source="avares://Neumorphism.Avalonia.Demo/Assets/Amoonshapedpool.png" Width="240" Height="240" Stretch="Uniform" />
+            <Image Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/Amoonshapedpool.png" Width="240" Height="240" Stretch="Uniform" />
             <StackPanel Orientation="Vertical" Margin="20,12">
               <TextBlock Classes="Headline6" Text="Card title" Foreground="{DynamicResource MaterialDesignBackground}" />
               <TextBlock Classes="Body2" Text="Secondary text" Foreground="{DynamicResource MaterialDesignBackground}" />
@@ -59,7 +59,7 @@
             </Style>
           </styles:Card.Styles>
           <StackPanel Orientation="Vertical" Margin="28">
-            <Image Source="avares://Neumorphism.Avalonia.Demo/Assets/avalonia-logo.png" Width="80" Height="80" Stretch="Uniform" />
+            <Image Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/avalonia-logo.png" Width="80" Height="80" Stretch="Uniform" />
             <StackPanel Margin="16">
               <TextBlock Classes="Headline6" Text="Card title" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignForeground}" />
               <TextBlock Classes="Body2" Text="Secondary text" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignForeground}" />
@@ -94,7 +94,7 @@
         <styles:Card Classes="Inset" Width="250" Height="310" CornerRadius="20" VerticalAlignment="Top" Padding="0" ToolTip.Tip="Inset card with custom corner radius">
           <Grid>
             <StackPanel Margin="0" Background="{DynamicResource PrimaryHueLightBrush}" ZIndex="1">
-              <Image Source="avares://Neumorphism.Avalonia.Demo/Assets/Amoonshapedpool.png" Width="240" Height="240" Stretch="Uniform" />
+              <Image Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/Amoonshapedpool.png" Width="240" Height="240" Stretch="Uniform" />
               <StackPanel Orientation="Vertical" Margin="20,12">
                 <TextBlock Classes="Headline6" Text="Card title" Foreground="{DynamicResource MaterialDesignBackground}" />
                 <TextBlock Classes="Body2" Text="Secondary text" Foreground="{DynamicResource MaterialDesignBackground}" />
@@ -119,7 +119,7 @@
             </Style>
           </styles:Card.Styles>
           <StackPanel Orientation="Vertical" Margin="28">
-            <Image Source="avares://Neumorphism.Avalonia.Demo/Assets/avalonia-logo.png" Width="80" Height="80" Stretch="Uniform" />
+            <Image Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/avalonia-logo.png" Width="80" Height="80" Stretch="Uniform" />
             <StackPanel Margin="16">
               <TextBlock Classes="Headline6" Text="Card title" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignForeground}" />
               <TextBlock Classes="Body2" Text="Secondary text" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignForeground}" />

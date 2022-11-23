@@ -15,7 +15,7 @@
 		  <Grid Margin="0,4" HorizontalAlignment="Stretch">
 
         <Image HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-86,0,0" ClipToBounds="True"
-                              Source="avares://Neumorphism.Avalonia.Demo/Assets/borealis.jpg" Stretch="Uniform" Width="300" Height="200" />
+                              Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/borealis.jpg" Stretch="Uniform" Width="300" Height="200" />
 
         <StackPanel Orientation="Vertical">
 
@@ -50,7 +50,7 @@
 				    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="150" BorderBrush="{DynamicResource MaterialDesignPaper}" BorderThickness="6" ClipToBounds="True">
 					    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 						    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-													     Source="avares://Neumorphism.Avalonia.Demo/Assets/300.jpg" Stretch="Uniform" Width="120" Height="120" />
+													     Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/300.jpg" Stretch="Uniform" Width="120" Height="120" />
 					    </Border>
 				    </Border>
 			    </styles:Card>

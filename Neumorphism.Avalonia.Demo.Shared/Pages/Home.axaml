@@ -50,7 +50,7 @@
 
 
 
-    <Image Width="1004" Height="301" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,40" Source="avares://Neumorphism.Avalonia.Demo/Assets/Neumorphism.png" Opacity="1"/>
+    <Image Width="1004" Height="301" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,40" Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/Neumorphism.png" Opacity="1"/>
 
 
 

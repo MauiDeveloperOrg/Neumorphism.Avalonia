@@ -22,23 +22,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<AvaloniaResource Include="Assets\**" /> 
+		<AvaloniaResource Include="Assets\**" />
+		<AvaloniaResource Include="Resources\**" />
+		<TrimmerRootDescriptor Include="Roots.xml" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<AdditionalFiles Include="**\*.xaml" />
 		<AdditionalFiles Include="**\*.axaml" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <AdditionalFiles Remove="Pages\TreeViewsDemo.axaml" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <AvaloniaXaml Update="Pages\TreeViewsDemo.axaml">
-	    <SubType>Designer</SubType>
-	  </AvaloniaXaml>
-	</ItemGroup>
-
 	
 </Project>

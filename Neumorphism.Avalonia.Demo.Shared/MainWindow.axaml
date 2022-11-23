@@ -6,7 +6,6 @@
 		xmlns:local="using:Neumorphism.Avalonia.Demo.Shared"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Width="1280" Height="720" MinWidth="720"
-        Icon="resm:Neumorphism.Avalonia.Demo.Resources.Icons.app.ico"
         Title="Avalonia.Neumorphism.Demo">
 
 	<local:MainView/>

@@ -30,7 +30,7 @@
 				<Border Grid.Column="0" Width="50" Height="50" Margin="0,0,8,0" CornerRadius="25" BorderBrush="{DynamicResource MaterialDesignToolBackground}" BorderThickness="3" ClipToBounds="True">
 					<Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 						<Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-													Source="avares://Neumorphism.Avalonia.Demo/Assets/200.jpg" Stretch="Uniform" Width="50" Height="50" />
+													Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/200.jpg" Stretch="Uniform" Width="50" Height="50" />
 					</Border>
 				</Border>
 				  <StackPanel Grid.Column="1" Orientation="Vertical">
@@ -53,7 +53,7 @@
 				  <Border Grid.Column="0" Width="50" Height="50" Margin="0,0,8,0" CornerRadius="25" BorderBrush="{DynamicResource MaterialDesignToolBackground}" BorderThickness="3" ClipToBounds="True">
 					  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 						  <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-													  Source="avares://Neumorphism.Avalonia.Demo/Assets/100.jpg" Stretch="Uniform" Width="50" Height="50" />
+													  Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/100.jpg" Stretch="Uniform" Width="50" Height="50" />
 					  </Border>
 				  </Border>
 				  <StackPanel Grid.Column="1" Orientation="Vertical">
@@ -72,7 +72,7 @@
 				  <Border Grid.Column="0" Width="50" Height="50" Margin="0,0,8,0" CornerRadius="25" BorderBrush="{DynamicResource MaterialDesignToolBackground}" BorderThickness="3" ClipToBounds="True">
 					  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 						  <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-													  Source="avares://Neumorphism.Avalonia.Demo/Assets/400.jpg" Stretch="Uniform" Width="50" Height="50" />
+													  Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/400.jpg" Stretch="Uniform" Width="50" Height="50" />
 					  </Border>
 				  </Border>
 				  <StackPanel Grid.Column="1" Orientation="Vertical">
@@ -96,7 +96,7 @@
 					<Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="150" BorderBrush="White" BorderThickness="3" ClipToBounds="True">
 						<Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 							<Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-								Source="avares://Neumorphism.Avalonia.Demo/Assets/400.jpg" Stretch="Uniform" Width="50" Height="500" />
+								Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/400.jpg" Stretch="Uniform" Width="50" Height="500" />
 						</Border>
 					</Border>
 				  </Button>
@@ -108,7 +108,7 @@
 					  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="150" BorderBrush="White" BorderThickness="3" ClipToBounds="True">
 						  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 							  <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-														  Source="avares://Neumorphism.Avalonia.Demo/Assets/100.jpg" Stretch="Uniform" Width="50" Height="500" />
+														  Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/100.jpg" Stretch="Uniform" Width="50" Height="500" />
 						  </Border>
 					  </Border>
 				  </Button>
@@ -120,7 +120,7 @@
 					  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="150" BorderBrush="White" BorderThickness="3" ClipToBounds="True">
 						  <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="120" ClipToBounds="True">
 							  <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" ClipToBounds="True"
-														  Source="avares://Neumorphism.Avalonia.Demo/Assets/200.jpg" Stretch="Uniform" Width="50" Height="500" />
+														  Source="avares://Neumorphism.Avalonia.Demo.Shared/Assets/200.jpg" Stretch="Uniform" Width="50" Height="500" />
 						  </Border>
 					  </Border>
 				  </Button>
