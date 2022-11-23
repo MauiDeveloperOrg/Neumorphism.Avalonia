@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0-ios</TargetFramework>
+		<SupportedOSPlatformVersion>10.0</SupportedOSPlatformVersion>
+		<ProvisioningType>manual</ProvisioningType>
+		<RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia.iOS" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Neumorphism.Avalonia.Demo.Shared\Neumorphism.Avalonia.Demo.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
