@@ -19,7 +19,26 @@ namespace Neumorphism.Avalonia.Demo.Desktop
         public static AppBuilder BuildAvaloniaApp()
         {
             return AppBuilder.Configure<App>()
+                             
                              .UsePlatformDetect()
+                             .With(new X11PlatformOptions
+                             {
+                                 EnableMultiTouch = true,
+                                 UseDBusMenu = true,
+                                 EnableIme = true
+                             })
+                             .With(new Win32PlatformOptions
+                             {
+                                 UseCompositor = false
+                             })
+                             .With(new X11PlatformOptions
+                             {
+                                 UseCompositor = false
+                             })
+                             .With(new AvaloniaNativePlatformOptions
+                             {
+                                 UseCompositor = false
+                             })
                              .UseXamlDisplay()
                              .LogToTrace();
         }
